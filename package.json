@@ -1,0 +1,37 @@
+{
+	"name": "sratchcard-es6-pixijs",
+	"version": "0.1.0",
+	"private": true,
+	"description": "A ES6 scratching system for Pixi.js",
+	"author": "Christian Haack (@ragamo)",
+	"scripts": {
+		"build": "gulp",
+		"serve": "ecstatic -p 8000 & watchify src/index.js -o build/bundle.js -dv"
+	},
+	"browserify": {
+		"transform": [
+			"babelify"
+		]
+	},
+	"dependencies": {
+		"babel-core": "^6.3.17",
+		"babel-preset-es2015": "^6.3.13",
+		"babel-preset-stage-0": "^6.3.13",
+		"babel-runtime": "^6.3.13",
+
+		"pixi.js": "*",
+		"pixi-particles": "*",
+
+		"stats.js": "*",
+
+		"ecstatic": "*",
+		"babelify": "*",
+		"watchify": "*",
+		"browserify": "*",
+
+		"gulp": "*",
+		"gulp-uglify": "*",
+		"vinyl-source-stream": "*",
+		"vinyl-buffer": "*"
+	}
+}
